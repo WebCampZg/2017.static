@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+    Lauren Budorick, Anjana Vakil: Learning WebGL by breaking stuff - WebCamp Zagreb Conference
+</title>
+
+    <link rel="stylesheet" href="../../static/fonts/fira_code/fira_code.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../static/styles/style.css">
+
+    <link rel="shortcut icon" href="../../static/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="../../static/images/favicon/apple-touch-icon-precomposed.png" />
+
+    <meta property="og:site_name" content="WebCamp Zagreb Conference"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="http://2017.webcampzg.org/workshops/learning-webgl-by-breaking-stuff/"/>
+
+    
+    <meta property="og:title" content="Lauren Budorick, Anjana Vakil: Learning WebGL by breaking stuff" />
+    <meta property="og:description" content="Doing reckless things with maps" />
+
+
+    
+    <meta property="og:image" content="http://2017.webcampzg.org/media/uploads/applicant_images/anjanavakilgmailcom/bAnjana_Vakil.jpg" />
+    <meta property="og:image:width" content="604" />
+    <meta property="og:image:height" content="604" />
+
+
+    
+    <meta name="description" content="Doing reckless things with maps">
+
+</head>
+<body>
+    
+        
+
+
+<div class="nav-bar show-for-large">
+    <a class="logo" href="../../index.html"></a>
+
+    <div class="nav-left">
+        
+    </div>
+
+    <div class="nav-links">
+        <div class="pounding heart">&lt;3</div>
+        
+            <div class="link"><a href="../../info/index.html">Info</a></div>
+        
+            <div class="link"><a href="../../venue/index.html">Venue</a></div>
+        
+            <div class="link"><a href="../index.html">Workshops</a></div>
+        
+            <div class="link"><a href="../../talks/index.html">Talks</a></div>
+        
+            <div class="link"><a href="../../schedule/index.html">Schedule</a></div>
+        
+            <div class="link"><a href="../../news/index.html">News</a></div>
+        
+            <div class="link"><a href="../../jobs/index.html">Jobs</a></div>
+        
+            <div class="link"><a href="../../code/index.html">Code</a></div>
+        
+            <div class="link"><a href="../../team/index.html">Team</a></div>
+        
+    </div>
+
+    <div class="nav-right no-wrap">
+    
+    </div>
+</div>
+
+
+<div class="mobile-nav-bar hide-for-large">
+    <div class="row align-middle">
+        <div class="columns">
+            <a href="../../index.html">
+                <img src="../../static/images/wczg2017_logo_mobile.svg">
+            </a>
+        </div>
+        <div class="columns shrink">
+            <a data-toggle="mobile-nav-menu">
+                <img src="../../static/images/hamburger.svg">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="mobile-nav-menu" class="hide hide-for-large" data-toggler=".hide">
+    <div class="mobile-nav-links">
+        <ul class="vertical menu align-center">
+            <li class="text-center red">&lt;3</li>
+            
+                <li><a href="../../info/index.html">Info</a></li>
+            
+                <li><a href="../../venue/index.html">Venue</a></li>
+            
+                <li><a href="../index.html">Workshops</a></li>
+            
+                <li><a href="../../talks/index.html">Talks</a></li>
+            
+                <li><a href="../../schedule/index.html">Schedule</a></li>
+            
+                <li><a href="../../news/index.html">News</a></li>
+            
+                <li><a href="../../jobs/index.html">Jobs</a></li>
+            
+                <li><a href="../../code/index.html">Code</a></li>
+            
+                <li><a href="../../team/index.html">Team</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="mobile-nav-buttons">
+        
+    </div>
+</div>
+
+
+    
+
+    
+
+    
+    <div class="row column">
+        <div class="content">
+            
+    <article class="workshop-detail">
+        <ul class="breadcrumbs">
+            <li><a href="../index.html">Workshops</a></li>
+            <li>Lauren Budorick, Anjana Vakil: Learning WebGL by breaking stuff</li>
+        </ul>
+
+        
+
+        <h1 class="red-arrow">Learning WebGL by breaking stuff</h1>
+
+        <p><em>Doing reckless things with maps</em></p>
+
+        <p>In this workshop we'll try to wrap our heads around some basic concepts of <a href="https://www.khronos.org/webgl/wiki/Main_Page">WebGL</a>, an open-source library for 3D web graphics based on the <a href="https://www.opengl.org/">OpenGL</a> project. But instead of working through safe, boring tutorial examples, we'll live dangerously and do it the fun way: by breaking things! We'll get our hands dirty by cloning and exploring, then tweaking and breaking a mature WebGL-based project: <a href="https://www.mapbox.com/mapbox-gl-js/api/">Mapbox GL JS</a>, an open source library for rendering <a href="https://api.mapbox.com/styles/v1/lbud/cj5a36kia6hxc2rnuy0jjxqn7.html?fresh=true&amp;title=true&amp;access_token=pk.eyJ1IjoibGJ1ZCIsImEiOiJCVTZFMlRRIn0.0ZQ4d9-WZrekVy7ML89P4A#15.35/40.7051/-74.011/21.6/38">3D, interactive maps</a> in the browser. By messing with its internals, we'll create some <a href="http://bl.ocks.org/lbud/raw/96d114f8c08180e7a8995e3aa78d74d5/#15.5/40.7054/-74.0113/21.6/38">crazy maps</a> that are very bad for getting around town, but very good for building intuitions about how WebGL works its magic.</p>
+
+<p>Concepts we’ll cover:</p>
+
+<ul>
+<li>WebGL rendering basics (vertices, shaders, etc)</li>
+<li>How WebGL is used in real-world applications such as web maps</li>
+<li>Digging into a large, mature open-source codebase</li>
+</ul>
+
+<h4>Prerequisites</h4>
+
+<p>This workshop does not require any prior WebGL/graphics experience, just an interest in understanding "how computers draw stuff."</p>
+
+<p>Participants should be comfortable with:</p>
+
+<ul>
+<li>JavaScript (preferably Node.js)</li>
+<li>Web app development in any language</li>
+<li>Cloning a GitHub repository</li>
+</ul>
+
+<p>Participants will need to <strong>bring a laptop</strong> with git, node.js, and a few other tools installed: OS-specific requirements and instructions can be found  <a href="https://github.com/mapbox/mapbox-gl-js/blob/master/CONTRIBUTING.md#preparing-your-development-environment">here</a>.</p>
+
+
+        <hr />
+
+        
+<p>
+    <b>Thursday, 2017-10-05 @ 09:00</b><br />
+    <a href="../../venue/index.html">Plaza Event Centar</a><br />
+
+    <span class="purple">&gt; </span>
+    <em>Duration: </em> 4h<br />
+
+    
+        <span class="purple">&gt; </span>
+        <em>Ticket price:</em> 50kn
+        (~€6)<br />
+    
+</p>
+
+        
+            <p>This workshop is sponsored by <a href="https://www.mapbox.com/">mapbox</a>, thank them for the very affordable ticket price. The ticket price will increase to <strong>200kn</strong> on <strong>Saturday, 30.09.</strong> so get them before then.</p>
+
+        
+
+        
+
+        <hr />
+
+        
+            
+
+<div class="row">
+    <div class="hide-for-small medium-3 columns">
+        <img src="../../media/uploads/applicant_images/lbudorickgmailcom/blauren.jpg" alt="Photo of Lauren Budorick" />
+    </div>
+
+    <div class="small-12 medium-8 columns">
+        <h3>Lauren Budorick</h3>
+
+        <p>Lauren grew up loving math, art, computers, and maps, so it is the happiest of accidents that she fell into graphics, working on Mapbox GL, an open-source rendering engine. She studied public policy and art at Duke University, then learned to code at Hackbright Academy. Her first programming project was a routing engine for runners to avoid the treacherous hills of San Francisco and she's been building map technologies ever since.</p>
+
+
+        
+<a href="https://twitter.com/lbudorick">
+    <span class="fa-stack fa-2x">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x"></i>
+    </span>
+</a>
+
+
+
+<a href="https://github.com/lbud">
+    <span class="fa-stack fa-2x">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x"></i>
+    </span>
+</a>
+
+
+    </div>
+</div>
+
+            <hr />
+        
+            
+
+<div class="row">
+    <div class="hide-for-small medium-3 columns">
+        <img src="../../media/uploads/applicant_images/anjanavakilgmailcom/bAnjana_Vakil.jpg" alt="Photo of Anjana Vakil" />
+    </div>
+
+    <div class="small-12 medium-8 columns">
+        <h3>Anjana Vakil</h3>
+
+        <p>Anjana suffers from a debilitating case of curiosity, which led her from philosophy to English teaching to computational linguistics to software development. She currently codes from her home base in Berlin; that is, when she's not speaking at events around the world, trying to share the joy of programming and promote a diverse and inclusive tech community. Talk to her about functional programming, language design, or speech technology, and ask her about Mozilla, Outreachy, and the Recurse Center!</p>
+
+
+        
+<a href="https://twitter.com/AnjanaVakil">
+    <span class="fa-stack fa-2x">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-twitter fa-stack-1x"></i>
+    </span>
+</a>
+
+
+
+<a href="https://github.com/vakila">
+    <span class="fa-stack fa-2x">
+        <i class="fa fa-square-o fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x"></i>
+    </span>
+</a>
+
+
+    </div>
+</div>
+
+            <hr />
+        
+
+        <p><em>The organizer reserves the right to cancel the workshop in case
+            of unforseen circumstances such as speaker illness. In this case
+            the tickets will be fully refunded.</em></p>
+
+        <p><em>By buying a ticket you agree to follow our
+            <a href="../../code/index.html">Code of Conduct</a>.</em></p>
+
+    </article>
+
+        </div>
+    </div>
+
+    
+        <div class="newsletter">
+    <div class="row column">
+        <h2>Subscribe for latest news</h2>
+
+        <!-- Begin MailChimp Signup Form -->
+        <form action="https://webcampzg.us7.list-manage.com/subscribe/post?u=9390a854a4f6130f215f417ef&amp;id=5b285297b0" method="post" target="_blank" novalidate>
+            <div class="input-group">
+                <input type="email" value="" name="EMAIL" placeholder="Enter email address" />
+                <input type="submit" class="red-arrow green button" value="> SUBSCRIBE" />
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_9390a854a4f6130f215f417ef_5b285297b0" tabindex="-1" value="">
+            </div>
+        </form>
+        <!--End mc_embed_signup-->
+    </div>
+</div>
+
+    
+
+
+    
+<div class="footer">
+    <div class="row column">
+        <div class="text-center">
+            <a href="../../tickets/index.html" class="purple arrow xlarge button">
+                BUY TICKETS
+            </a>
+            &nbsp;
+            <a href="../../media/wczg_2017_sponsors_brochure.pdf" class="yellow arrow xlarge button">
+                SPONSOR WEBCAMP
+            </a>
+        </div>
+
+        <hr />
+
+        <div class="row footer-row">
+            <div class="columns">
+                <div class="row">
+                    <div class="small-12 medium-4 columns">
+                        <div class="logo">
+                            <img src="../../static/images/wczg2017_logo_gray.svg" />
+                        </div>
+                    </div>
+                    <div class="small-12 medium-8 columns">
+                        <div class="row footer-nav">
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../../info/index.html">INFO</a>
+                            </div>
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../../venue/index.html">VENUE</a>
+                            </div>
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../index.html">WORKSHOPS</a>
+                            </div>
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../../talks/index.html">TALKS</a>
+                            </div>
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../../schedule/index.html">SCHEDULE</a>
+                            </div>
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../../news/index.html">NEWS</a>
+                            </div>
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../../jobs/index.html">JOBS</a>
+                            </div>
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../../code/index.html">CODE</a>
+                            </div>
+                            
+                            <div class="small-12 medium-6">
+                                <a href="../../team/index.html">TEAM</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <p>FOLLOW WEBCAMP ZAGREB</p>
+                <div class="row">
+                    <div class="columns">
+                        <p><a href="https://www.facebook.com/WebCampZagreb/">facebook</a></p>
+                        <p><a href="https://twitter.com/webcampzagreb/">twitter</a></p>
+                        <p><a href="https://www.youtube.com/user/WebCampZg">youtube</a></p>
+                    </div>
+                    <div class="columns">
+                        <p><a href="https://www.linkedin.com/company-beta/6397140/ ">linkedin</a></p>
+                        <p><a href="https://github.com/webcampzg ">github</a></p>
+                        <p><a href="https://plus.google.com/+WebcampzgOrgHR ">google+</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns text-center">
+                <a data-scroll-to-top href="index.html#">
+                    <img src="../../static/images/scroll-up.svg" />
+                    <br/>
+                    {&nbsp;back_to_top&nbsp;}
+                </a>
+            </div>
+        </div>
+
+        <hr />
+
+        <p class="text-center">
+            <span class="red">&lt;3</span>
+            &copy;
+            WebCamp Zagreb 2012
+            <span class="blue">:</span>
+            2018
+            <span class="red">&lt;3</span>
+        </p>
+    </div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).foundation();
+
+        $(document).ready(function () {
+
+            $("[data-scroll-to-top]").click(function (e) {
+                e.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+            });
+        });
+    </script>
+
+    
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-35198834-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
