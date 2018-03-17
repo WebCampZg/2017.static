@@ -3850,9 +3850,9 @@ select {
           margin-left: 1rem;
           color: #47C5C2; }
   .nav-bar .nav-right {
+    width: 12rem;
     display: flex;
     align-items: center;
-    background-color: #E6E6E6;
     height: calc(4rem - 2px); }
     .nav-bar .nav-right a {
       display: block;
